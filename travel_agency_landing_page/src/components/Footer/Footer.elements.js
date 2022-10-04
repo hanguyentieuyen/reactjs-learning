@@ -9,55 +9,6 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
-export const FooterSubscription = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 24px;
-  padding: 24px;
-  color: #fff;
-`;
-export const FooterSubHeading = styled.p`
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  margin-bottom: 24px;
-  font-size: 24px;
-`;
-
-export const FooterSubText = styled.p`
-  font-size: 20px;
-  margin-bottom: 24px;
-`;
-
-export const Form = styled.form`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (max-width: 820px) {
-    flex-direction: column;
-    width: 80%;
-  }
-`;
-export const FormInput = styled.input`
-  padding: 10px 20px;
-  border-radius: 2px;
-  margin-right: 10px;
-  outline: none;
-  border: none;
-  font-size: 16px;
-  border: 1px solid #fff;
-
-  &::placeholder {
-    color: #242424;
-  }
-
-  @media screen and (max-width: 820px) {
-    width: 100%;
-    margin: 0 0 16px 0;
-  }
-`;
 export const FooterLinksContainer = styled.div`
   width: 100%;
 

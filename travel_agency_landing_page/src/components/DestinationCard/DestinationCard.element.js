@@ -19,12 +19,20 @@ export const DestinationText = styled.p`
   color: #696262;
 `;
 export const CardWrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+  @media screen and (max-width: 414px) {
+    grid-template-columns: auto;
+  }
 `;
 export const CardItem = styled.div`
   max-width: 370px;
   width: 100%;
-
   border-radius: 15px;
   border: 1px solid #ffffff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);

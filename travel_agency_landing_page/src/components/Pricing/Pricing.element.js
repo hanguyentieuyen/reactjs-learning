@@ -21,15 +21,25 @@ export const PricingText = styled.p`
   max-width: 500px;
 `;
 export const PricingCardWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+  @media screen and (max-width: 414px) {
+    grid-template-columns: auto;
+  }
 `;
 export const CardItem = styled.div`
   max-width: 270px;
-  width: 100%;
   border-radius: 15px;
   border: 1px solid #ffffff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  @media screen and (max-width: 768px) {
+    max-width: 350px;
+  }
 `;
 export const CardImgWrapper = styled.div``;
 export const CardImg = styled.img`

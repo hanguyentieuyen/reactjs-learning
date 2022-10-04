@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const BlogContent = styled.div`
   width: 100%;
   padding-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 160px;
 `;
 export const BlogHeading = styled.h2`
   color: #130606;
@@ -14,12 +14,19 @@ export const BlogHeading = styled.h2`
 export const BlogContentText = styled.div`
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 414px) {
+    flex-direction: column;
+  }
 `;
 export const BlogReadAll = styled.span`
   font-size: 16px;
   line-height: 30px;
   font-weight: 600;
   color: #fd5056;
+  @media screen and (max-width: 414px) {
+    font-size: 14px;
+    margin-top: 1 0px;
+  }
 `;
 export const BlogText = styled.p`
   font-size: 16px;
@@ -31,19 +38,29 @@ export const BlogText = styled.p`
 
 export const CardWrapper = styled.div`
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
   margin-bottom: 160px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+  @media screen and (max-width: 414px) {
+    grid-template-columns: auto;
+  }
 `;
 
 export const CardItem = styled.div`
   max-width: 370px;
-  width: 100%;
   border-radius: 15px;
   border: 1px solid #ffffff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 `;
-export const CardImg = styled.img``;
+export const CardImg = styled.img`
+  width: 100%;
+  background-size: cover;
+`;
 export const CardContent = styled.div`
   padding: 15px 20px;
 `;

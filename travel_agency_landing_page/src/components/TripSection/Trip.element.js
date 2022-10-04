@@ -6,7 +6,7 @@ export const TripContent = styled.div`
   align-items: center;
   flex-direction: column;
   margin-bottom: 50px;
-  margin-top: 100px;
+  margin-top: 160px;
 `;
 export const TripHeading = styled.div`
   color: #130606;
@@ -29,6 +29,9 @@ export const TripVideo = styled.iframe`
   border-radius: 15px;
   border: none;
   width: 100%;
+  @media screen and (max-width: 768px) {
+    height: 400px;
+  }
 `;
 export const TripEmailWrapper = styled.div`
   display: flex;

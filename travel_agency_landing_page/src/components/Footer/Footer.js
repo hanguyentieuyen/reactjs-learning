@@ -2,12 +2,7 @@ import React from "react";
 import { Button } from "../../globalStyles";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import {
-  Form,
-  FormInput,
   FooterContainer,
-  FooterSubscription,
-  FooterSubHeading,
-  FooterSubText,
   FooterLinksContainer,
   FooterLinksWrapper,
   FooterLinksItem,
@@ -24,17 +19,6 @@ import {
 const Footer = () => {
   return (
     <FooterContainer>
-      {/* <FooterSubscription>
-        <FooterSubHeading>
-          Join our exclusive membership to receive the lastest news and trends
-        </FooterSubHeading>
-        <FooterSubText>You can unsubscribe at any time</FooterSubText>
-        <Form>
-          <FormInput name="email" type="email" placeholder="Your Email" />
-          <Button fontBig>Subscribe</Button>
-        </Form>
-      </FooterSubscription> */}
-
       <FooterLinksContainer>
         <FooterLinksWrapper>
           <FooterLinksItem>
@@ -60,6 +44,7 @@ const Footer = () => {
             <FooterLink to="/sign-up">Terms</FooterLink>
             <FooterLink to="/sign-up">New trips</FooterLink>
             <FooterLink to="/sign-up">Policy</FooterLink>
+            <FooterLink to="/sign-up">Informations</FooterLink>
           </FooterLinksItem>
           <FooterLinksItem>
             <FooterLinkTitle>Social Media</FooterLinkTitle>
