@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container, Button } from "../../globalStyles";
-import { blogObjectOne } from "./Data";
+import { blogObjectOne, blogObjectTwo, blogObjectThree } from "./Data";
 import {
   BlogContent,
   BlogHeading,
@@ -26,8 +26,8 @@ const BlogSection = () => {
       </BlogContent>
       <CardWrapper>
         <CardItem {...blogObjectOne} />
-        <CardItem {...blogObjectOne} />
-        <CardItem {...blogObjectOne} />
+        <CardItem {...blogObjectTwo} />
+        <CardItem {...blogObjectThree} />
       </CardWrapper>
     </Container>
   );
