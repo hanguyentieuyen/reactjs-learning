@@ -17,7 +17,7 @@ const Products = () => {
       setLoading(false);
       setData(await response.clone().json());
       setFilter(await response.json());
-      console.log(filter);
+      // console.log(filter);
       //   }
       //   return () => {
       //     componentMounted = false;
@@ -33,45 +33,45 @@ const Products = () => {
   const ShowProducts = () => {
     return (
       <>
-        <div className="buttons d-flex justify-content-center mb-5">
+        <div className=" buttons d-flex justify-content-center  mb-5">
           <button
-            className="btn btn-outline-dark me-2 "
+            className="btn btn-outline-primary px-5 me-md-3"
             onClick={() => {
               setFilter(data);
             }}
           >
-            All
+            Tất cả
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn btn-outline-primary  px-5 me-md-3"
             onClick={() => filterItem("men's clothing")}
           >
-            Men's Clothing
+            Thời Trang Nam
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn btn-outline-primary  px-5 me-md-3"
             onClick={() => filterItem("women's clothing")}
           >
-            Women's Clothing
+            Thời Trang Nữ
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn btn-outline-primary me-md-3 px-5"
             onClick={() => filterItem("jewelery")}
           >
-            Jewelery
+            Trang sức
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn btn-outline-primary px-5 me-md-3"
             onClick={() => filterItem("electronics")}
           >
-            Electronic
+            Đồ công nghệ
           </button>
         </div>
         {filter.map((item) => {
           return (
             <>
               <div className="col-md-3">
-                <div className="card h-100 text-center p-4 " key={item.id}>
+                <div className="card h-80 text-center p-3 mb-4" key={item.id}>
                   <img
                     src={item.image}
                     className="card-img-top"
@@ -84,10 +84,10 @@ const Products = () => {
                     </h5>
                     <p className="card-text fw-bold lead">${item.price}</p>
                     <NavLink
-                      to={`products/${item.id}`}
+                      to={`/products/${item.id}`}
                       className="btn btn-outline-dark"
                     >
-                      Buy Now
+                      Mua ngay
                     </NavLink>
                   </div>
                 </div>
@@ -121,7 +121,9 @@ const Products = () => {
       <div className="container my-5 py-5">
         <div className="row">
           <div className="col-12 mb-5">
-            <h1 className="display-6 fw-bolder text-center">Latest Products</h1>
+            <h1 className="display-6 fw-bolder text-center">
+              Sản phẩm mới nhất
+            </h1>
           </div>
         </div>
         <div className="row justify-content-center">

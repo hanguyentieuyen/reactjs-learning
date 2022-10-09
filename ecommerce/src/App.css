@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+ul {
+  padding: 0 !important;
+}
+li {
+  list-style: none;
+}
+.btn.active {
+  background-color: inherit !important;
+}
+.btn.active:hover {
+  color: #000 !important;
+}
+.card-product {
+  border: 1px solid #ebebeb;
+}
+.footer-wrapper {
+  background-color: #f4f4f4;
+}

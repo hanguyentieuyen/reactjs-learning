@@ -3,15 +3,18 @@ import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import { useDispatch } from "react-redux";
-import { addCart } from "../../redux/action";
+import { addCart, deleteCart } from "../../redux/action";
 const Product = () => {
   const [loading, setLoading] = useState([]);
   const [product, setProduct] = useState(false);
+
   const { id } = useParams();
   const dispatch = useDispatch();
-  const addProduct = (product) => {
+
+  const addItem = () => {
     dispatch(addCart(product));
   };
+
   useEffect(() => {
     const getProduct = async () => {
       setLoading(true);
@@ -43,13 +46,16 @@ const Product = () => {
           <h3 className="display-6 fw-bold my-4">${product.price}</h3>
           <p className="lead">{product.description}</p>
           <button
-            className="btn btn-outline-dark py-2 px-3"
-            onClick={() => addProduct(product)}
+            className="btn btn-outline-primary py-2 px-3"
+            onClick={() => addItem(product)}
           >
-            Add to Cart
+            Thêm vào giỏ
           </button>
-          <NavLink to="/card" className="btn btn-dark ms-2 py-2 px-3">
-            Go to Cart
+          <NavLink
+            to="/cart"
+            className="btn btn-primary text-light ms-2 py-2 px-3"
+          >
+            Tới giỏ hàng
           </NavLink>
         </div>
       </>
