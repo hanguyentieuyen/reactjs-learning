@@ -33,9 +33,9 @@ const Products = () => {
   const ShowProducts = () => {
     return (
       <>
-        <div className=" buttons d-flex justify-content-center  mb-5">
+        <div className="buttons d-flex justify-content-center mb-5 category-filter">
           <button
-            className="btn btn-outline-primary px-5 me-md-3"
+            className="btn btn-outline-primary px-2 me-md-3"
             onClick={() => {
               setFilter(data);
             }}
@@ -43,25 +43,25 @@ const Products = () => {
             Tất cả
           </button>
           <button
-            className="btn btn-outline-primary  px-5 me-md-3"
+            className="btn btn-outline-primary  px-2 me-md-3"
             onClick={() => filterItem("men's clothing")}
           >
             Thời Trang Nam
           </button>
           <button
-            className="btn btn-outline-primary  px-5 me-md-3"
+            className="btn btn-outline-primary  px-2 me-md-3"
             onClick={() => filterItem("women's clothing")}
           >
             Thời Trang Nữ
           </button>
           <button
-            className="btn btn-outline-primary me-md-3 px-5"
+            className="btn btn-outline-primary me-md-3 px-2"
             onClick={() => filterItem("jewelery")}
           >
             Trang sức
           </button>
           <button
-            className="btn btn-outline-primary px-5 me-md-3"
+            className="btn btn-outline-primary px-2 me-md-3"
             onClick={() => filterItem("electronics")}
           >
             Đồ công nghệ
@@ -71,7 +71,10 @@ const Products = () => {
           return (
             <>
               <div className="col-md-3">
-                <div className="card h-80 text-center p-3 mb-4" key={item.id}>
+                <div
+                  className="card card-product h-80 text-center p-3 mb-4"
+                  key={item.id}
+                >
                   <img
                     src={item.image}
                     className="card-img-top"

@@ -97,15 +97,14 @@ const Cart = () => {
             );
           })}
         </div>
-        ;
       </>
     );
   };
   return (
     <>
-      {cartProducts.length === 0 && emptyCart()};
-      {cartProducts?.length !== 0 && cartItems()};
-      {cartProducts.length !== 0 && showTotalPrice()};
+      {cartProducts.length === 0 && emptyCart()}
+      {cartProducts?.length !== 0 && cartItems()}
+      {cartProducts.length !== 0 && showTotalPrice()}
     </>
   );
 };

@@ -5,7 +5,6 @@
 }
 a {
   text-decoration: none !important;
-  color: #000 !important;
 }
 ul {
   padding: 0 !important;
@@ -16,12 +15,23 @@ li {
 .btn.active {
   background-color: inherit !important;
 }
-.btn.active:hover {
+/* .btn.active:hover {
   color: #000 !important;
-}
+} */
+
 .card-product {
-  border: 1px solid #ebebeb;
+  border: none !important;
+  box-shadow: 0 5px 8px 5px rgb(0 0 0 / 7%);
 }
 .footer-wrapper {
   background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 414px) {
+  .category-filter {
+    flex-direction: column;
+  }
+  .category-filter button {
+    margin-bottom: 12px;
+  }
 }

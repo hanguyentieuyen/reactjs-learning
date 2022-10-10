@@ -41,6 +41,11 @@ export const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
   margin-bottom: 160px;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
   @media screen and (max-width: 768px) {
     grid-template-columns: auto auto;
     grid-column-gap: 25px;
