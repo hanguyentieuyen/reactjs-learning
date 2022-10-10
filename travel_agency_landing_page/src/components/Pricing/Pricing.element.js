@@ -23,10 +23,13 @@ export const PricingText = styled.p`
 export const PricingCardWrapper = styled.div`
   display: grid;
   grid-template-columns: auto auto auto auto;
-  @media screen and (max-width: 768px) {
-    grid-template-columns: auto auto;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: auto auto auto auto;
     grid-column-gap: 25px;
     grid-row-gap: 25px;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: auto auto;
   }
   @media screen and (max-width: 414px) {
     grid-template-columns: auto;

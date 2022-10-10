@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoSec = styled.div`
   color: #fff;
   padding-top: 80px;
-  background-color: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")};
+  background-color: #fff;
   margin-bottom: 160px;
 `;
 
@@ -37,6 +37,9 @@ export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
   padding-left: 120px;
+  @media screen and (max-width: 1024px) {
+    padding-left: 20px;
+  }
   @media screen and (max-width: 768px) {
     padding-left: 0;
   }
@@ -72,6 +75,7 @@ export const ImgWrapper = styled.div`
   max-width: 600px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   @media screen and (max-width: 414px) {
     flex-direction: column;
   }
@@ -80,15 +84,19 @@ export const ImgWrapper1 = styled.div`
   display: flex;
   flex-direction: column;
 `;
+export const ImgWrapper2 = styled.div`
+  margin: 10px 0;
+`;
 export const Img = styled.img`
   padding-right: 0;
   border: 0;
   max-width: 270px;
   width: 100%;
   margin: 10px 0;
-  @media screen and (max-width: 768px) {
-    padding-left: 20px;
+  @media screen and (max-width: 1024px) {
+    padding-left: 10px;
   }
+
   @media screen and (max-width: 414px) {
     padding-left: 0;
   }

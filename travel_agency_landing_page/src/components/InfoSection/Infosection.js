@@ -11,6 +11,7 @@ import {
   Subtitle,
   ImgWrapper,
   ImgWrapper1,
+  ImgWrapper2,
   Img,
 } from "./Infosection.elements";
 
@@ -18,13 +19,11 @@ export const Infosection = ({
   primary,
   lightBg,
   imgStart,
-  lightTopLine,
   lightTextDesc,
   buttonLabel,
   description,
   headline,
   lightText,
-  topLine,
   start,
   img,
   img1,
@@ -53,7 +52,9 @@ export const Infosection = ({
                   <Img src={img1} alt={alt} />
                   <Img src={img2} alt={alt} />
                 </ImgWrapper1>
-                <Img src={img} alt={alt} />
+                <ImgWrapper2>
+                  <Img src={img} alt={alt} />
+                </ImgWrapper2>
               </ImgWrapper>
             </InfoColumn>
           </InfoRow>

@@ -2,7 +2,6 @@ import styled from "styled-components";
 export const BlogContent = styled.div`
   width: 100%;
   padding-bottom: 50px;
-  margin-top: 160px;
 `;
 export const BlogHeading = styled.h2`
   color: #130606;
@@ -48,8 +47,6 @@ export const CardWrapper = styled.div`
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: auto auto;
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
   }
   @media screen and (max-width: 414px) {
     grid-template-columns: auto;

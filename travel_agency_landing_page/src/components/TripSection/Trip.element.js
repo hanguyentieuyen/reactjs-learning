@@ -38,6 +38,7 @@ export const TripEmailWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 160px;
 `;
 
 export const TripEmailInput = styled.input`
