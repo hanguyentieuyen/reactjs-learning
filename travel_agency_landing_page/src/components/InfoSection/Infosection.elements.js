@@ -84,9 +84,7 @@ export const ImgWrapper1 = styled.div`
   display: flex;
   flex-direction: column;
 `;
-export const ImgWrapper2 = styled.div`
-  margin: 10px 0;
-`;
+export const ImgWrapper2 = styled.div``;
 export const Img = styled.img`
   padding-right: 0;
   border: 0;
